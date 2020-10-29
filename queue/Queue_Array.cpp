@@ -41,7 +41,9 @@ void dequeue(int Queue[])
         front++;
     }
 }
-
+//code contributed by: narayan
+//git: narayann7
+//email: laxminarayanreddy432@gmail.com
 void display_Queue(int Queue[], int front, int rear)
 {
     if (front == -1)

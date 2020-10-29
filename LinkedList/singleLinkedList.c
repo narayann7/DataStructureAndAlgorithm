@@ -120,6 +120,9 @@ void addFormPosition() //6
     temp->next = q;
     p->next = temp;
 }
+//code contributed by: narayan
+//git: narayann7
+//email: laxminarayanreddy432@gmail.com
 void swap() //7
 {
     struct node *q, *r;
@@ -181,6 +184,9 @@ struct node *revprint(struct node *p) //9
         printf("%d  ", p->data);
     }
 }
+//code contributed by: narayan
+//git: narayann7
+//email: laxminarayanreddy432@gmail.com
 void delete2() //10
 {
     printf("\nenter the element which you want to delete\n");

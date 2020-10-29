@@ -31,6 +31,9 @@ int Fibonacci(int n) //
         return 1;
     return Fibonacci(n - 1) + Fibonacci(n - 2);
 }
+//code contributed by: narayan
+//git: narayann7
+//email: laxminarayanreddy432@gmail.com
 int sumOfEachDigit(int n)
 {
     if (n < 10)
