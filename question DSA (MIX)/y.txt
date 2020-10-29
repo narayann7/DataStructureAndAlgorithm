@@ -1,1 +1,1 @@
-{"k":"j","jk":"https://www.geeksforgeeks.org/reverse-a-linked-list/"}
+<a href="https://www.geeksforgeeks.org/reverse-a-linked-list/">click</a>
