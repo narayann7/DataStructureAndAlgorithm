@@ -1,1 +1,1 @@
-[hello](https://www.geeksforgeeks.org/reverse-a-linked-list/)
+[hello]:https://www.geeksforgeeks.org/reverse-a-linked-list/
