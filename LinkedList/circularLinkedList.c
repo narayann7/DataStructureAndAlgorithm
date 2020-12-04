@@ -123,7 +123,7 @@ int main()
     printf("\n 2 to insert the element from end: ");
 	printf("\n 3 to delete the element from begin : ");
 	printf("\n 4 to delete the element from end : ");
-	printf("\n 5 to display the queue : ");
+	printf("\n 5 to display  : ");
 	printf("\n 6 to exit from main : ");
 	printf("\nEnter your choice : ");
 
