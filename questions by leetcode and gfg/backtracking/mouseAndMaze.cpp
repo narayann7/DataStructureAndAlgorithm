@@ -27,7 +27,7 @@ bool micePro(int **arr1, int i, int j, int n, int **sol1)
 
     if (isSafe(arr1, i, j, n))
     {
-        // xxx(sol1, n);
+        
         sol1[i][j] = 1;
         if (micePro(arr1, i, j + 1, n, sol1))
         {
