@@ -98,6 +98,9 @@ if(f<l)
 
 }
 }
+//code contributed by: narayan
+//git: narayann7
+//email: laxminarayanreddy432@gmail.com
 void mergesort(int *x,int l,int mid,int h)
 {
  int i=l,j=mid+1,k=l;
@@ -158,6 +161,9 @@ else
 i++;
 }
 }
+//code contributed by: narayan
+//git: narayann7
+//email: laxminarayanreddy432@gmail.com
 int main() 
 {
     int s;
