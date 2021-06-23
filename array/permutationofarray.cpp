@@ -48,8 +48,6 @@ void solve()
 }
 //code contributed by: narayan
 //git: narayann7
-//email: laxminarayanreddy432@gmail.com
-
 int main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);

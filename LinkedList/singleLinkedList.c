@@ -122,7 +122,6 @@ void addFormPosition() //6
 }
 //code contributed by: narayan
 //git: narayann7
-//email: laxminarayanreddy432@gmail.com
 void swap() //7
 {
     struct node *q, *r;

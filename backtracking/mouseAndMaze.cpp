@@ -45,8 +45,6 @@ bool micePro(int **arr1, int i, int j, int n, int **sol1)
 }
 //code contributed by: narayan
 //git: narayann7
-//email: laxminarayanreddy432@gmail.com
-
 int main()
 {
 

@@ -43,5 +43,3 @@ public:
 };
 //code contributed by: narayan
 //git: narayann7
-//email: laxminarayanreddy432@gmail.com
-//leetcode: narayann7
