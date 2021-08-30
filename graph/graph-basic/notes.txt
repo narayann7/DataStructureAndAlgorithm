@@ -1,0 +1,43 @@
+//graph
+
+for creating graphs
+
+adj matrix 
+adj list -- map<int,list<int>>, list<int> arr[] ;
+
+
+
+
+1. 
+shortest path from source node (unweighted when all node have same weight)
+
+its simply means slove by bfs...
+
+parent = 0
+
+then child is parent+1
+
+
+
+2.
+no.of component of graph 
+like all graph are not cyclic or connected 
+
+like some are 
+1-3-4 and 9-7
+
+
+can be in parts in that case create a visited array and then itterate thougth it
+
+if element is not visited dfs through it , and then again not visted then againg dfs 
+
+
+case1  1,3,4 will will be visited then 9,7 will be not visited because they are not linked 
+
+then again start dfs from 9
+
+
+3.
+
+
+

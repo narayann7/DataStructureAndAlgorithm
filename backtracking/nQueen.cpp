@@ -55,7 +55,7 @@ int main()
     cout<<"enter the size "<<endl;
 
     cin >> n;
-    vector<vector<char>> v(n, vector<char>(n, '.'));
+    vector<vector<char>> v(n, vector<char>(n, '1'));
 
     if (slove(v, 0, v.size()))
     {

@@ -1,0 +1,8 @@
+notes
+
+
+a C b (combination)
+
+a C b = a!/(b! * (a-b)!)
+
+
