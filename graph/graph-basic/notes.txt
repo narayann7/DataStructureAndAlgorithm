@@ -1,9 +1,13 @@
 //graph
 
-for creating graphs
+*for creating graphs
 
 adj matrix 
 adj list -- map<int,list<int>>, list<int> arr[] ;
+
+
+*if there is n node and n-1 edges then the graph is tree
+*
 
 
 
