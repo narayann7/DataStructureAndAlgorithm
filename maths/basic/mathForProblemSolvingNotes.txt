@@ -6,3 +6,6 @@ a C b (combination)
 a C b = a!/(b! * (a-b)!)
 
 
+
+
+leetcode  268,

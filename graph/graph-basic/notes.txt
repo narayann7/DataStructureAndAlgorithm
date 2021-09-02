@@ -42,6 +42,40 @@ then again start dfs from 9
 
 
 3.
+cycle dectetion in unweighted graph use simple hash 
+use bfs or dfs to check node visited or not if a node already visited 
+comes for a check then there is a cycle in the graph 
+and when there is n node and and n-1 edges thene its a treee
+
+but check for a corner case that parent == child  for this case it will true
+
+
+4.
+Graph Bipartite
+
+Bipartite graph means
+
+graph will break into two sets ex. A  B
+such that elements in A will not have and edges with the elements of A, it shoud have edge with Set B
+
+it also called 2 coloring problem 
+
+which means every node will have alternanate color 
+if any two node will have same color and bith are linked with each other than it is not bipartite
+
+in simple if a graph in a tree 
+
+then each alternative level have alternate color
+
+if a graph have odd node then it is not bipartite
+
+problem releated to it 
+
+leetcode_765 , in graph-questions
+
+
+
+5.
 
 
 
