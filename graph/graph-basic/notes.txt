@@ -76,6 +76,32 @@ leetcode_765 , in graph-questions
 
 
 5.
+topological sort 
+
+in simple for we havce sort the graph in a way that in
+every U -> V , in all the nodes U must occur first in sorted array than U should come
+and the it can have more than one top.sort array in a given graph
+
+it can done easily by dfs...
+take a list------every time u leave the dfs function just push front the current no. 
+
+
+6.
+height of a tree can simply find out by dfs,bfs,
+just take height array ->> parent =1;
+then child = parent+1;
+works good for graph which are trees , or graphs which are acylic
+
+
+7.
+
+
+
+
+
+
+
+
 
 
 

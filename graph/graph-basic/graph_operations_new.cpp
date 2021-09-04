@@ -155,6 +155,48 @@ void DFS(T start){
 
 }
 
+//---------------------------------------------------------------------------
+//may have error cause its a diffrent program. 
+//topological sort using dfs
+
+map<int,int>mp;
+list<int>l;
+
+void dfs2(int n,vector<int> adj[])
+{
+    mp[n]=1;
+
+    for(auto i: adj[n])
+        if(mp[i]==0)
+            dfs2(i,adj);
+
+        l.push_front(n);
+    }
+
+
+
+    vector<int> topoSort(int V, vector<int> adj[]) 
+    {
+        vector<int> v;
+        for(int i=0;i<V;i++)
+            mp[i]=0;
+        for(int i=0;i<V;i++)
+         if(mp[i]==0)
+            dfs2(i,adj);
+        for(auto i:l)
+            v.push_back(i);
+        return v;
+
+
+
+        // code here
+    }
+
+//---------------------------------------------------------------------------    
+
+
+
+    
 };
 
 
@@ -168,6 +210,46 @@ notes
 
 BFS is ittreative way , DFS is rrecursion
 
+topological sort
+
+class Solution
+{
+    public:
+    map<int,int>mp;
+    list<int>l;
+    
+    void dfs(int n,vector<int> adj[])
+    {
+        mp[n]=1;
+        
+        for(auto i: adj[n])
+        {
+            if(mp[i]==0)
+            {
+                dfs(i,adj);
+          
+            }
+        }
+         l.push_front(n);
+    }
+    //Function to return list containing vertices in Topological order. 
+    vector<int> topoSort(int V, vector<int> adj[]) 
+    {
+        vector<int> v;
+        for(int i=0;i<V;i++)
+        mp[i]=0;
+        for(int i=0;i<V;i++)
+         if(mp[i]==0)
+        dfs(i,adj);
+        for(auto i:l)
+        v.push_back(i);
+        return v;
+           
+           
+        
+        // code here
+    }
+};
 
 
 */
