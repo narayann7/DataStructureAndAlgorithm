@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
 public:
 
-//---------------------------------------------------------------------------
+//-------------------------------------------------------------------------
 
 //topological sort using dfs
 
@@ -21,10 +21,8 @@ public:
       if(mp[i]==0)
         dfs2(i,adj);
 
-      l.push_front(n);
-    }
-
-
+      l.push_front(n); //pushing the element to front to the list 
+   }
 
     vector<int> topological_dfs(int V, vector<int> adj[]) 
     {
@@ -38,14 +36,9 @@ public:
           v.push_back(i);
         return v;
 
-
-
      }
 
 //---------------------------------------------------------------------------    
-
-
-//---------------------------------------------------------------------------
 
 //topological sort using bfs
 
@@ -55,14 +48,14 @@ public:
 
         int ind[n]={0};
 
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n;i++) //calculating indegree of all node 
           for(auto ele:va[i])
             ind[ele]++;
         
 
         queue<int> q;
 
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n;i++) //pushing the element with indegree zero in queue 
           if(ind[i]==0)        
             q.push(i);
   
@@ -75,10 +68,8 @@ public:
             {
 
               ind[i]--;
-
-              if(ind[i]==0)
-                q.push(i);
-
+              if(ind[i]==0) //when indegree will become zero , just push into queue
+                q.push(i); //and explore that node 
 
             }
             ans.push_back(element);
@@ -92,9 +83,6 @@ public:
 
       };
 
-
-
-
       int main(){
 
         vector<vector<int>> v={
@@ -105,10 +93,8 @@ public:
           {2,3},
           {3,4},
 
-
         };
         vector<int> va[6];
-
 
         for(int i=0;i<v.size();i++)
           va[v[i][0]].push_back(v[i][1]);
@@ -127,7 +113,5 @@ public:
         cout<<"topological_dfs"<<"\n";
         for(auto i:ans2)
           cout<<i<<" -> ";
-
-
 
       }
