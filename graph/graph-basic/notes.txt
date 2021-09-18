@@ -98,7 +98,34 @@ works good for graph which are trees , or graphs which are acylic
 
 7.
 
+for check cycle in directed graph
 
+in dfs take a hash 
+
+where hash=0 , when element is not visited
+
+hash = 1 when element is not part of cycle
+
+hash = 2 , when element is in cycle  
+
+means while is not visisted then hash =1;
+after the hash = 2 mean the recution fuction is going on then again element came then its a cycle 
+while returning the dfs fun hash-- or make hash = 1;
+
+
+
+in bfs its easy use khans algo , algo with indgree with hash 
+
+use a counter in  topological sort using khans algo 
+after that n==count then topological sort is possible 
+
+when topo sort is possible which means the graph is not cylic 
+
+*topo sort is nopt possible for cylic graph 
+
+then n==count then there is not cycle
+else
+there is a cycle
 
 
 
