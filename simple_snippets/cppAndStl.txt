@@ -27,6 +27,26 @@ v.fuction(x)
 vector<int>::iterator ptr = v.begin();
 or auto ptr = v.begin();
 
+lower_bound
+ex-
+vector<int> v{ 10, 20, 30, 30, 30, 40, 50 };
+
+auto low1 = std::lower_bound(v.begin(), v.end(), 30);  #OP-2
+auto low2 = std::lower_bound(v.begin(), v.end(), 35);  #OP-5
+auto low3 = std::lower_bound(v.begin(), v.end(), 55);  #OP-7
+
+how to print -- cout<<(low1-v.begin());
+
+-its says if the element is present the it will print the index
+-if not there but smaller than the another element then it will print 
+the index of the next ( greater element - 1 )
+-if inbetween it finds a element greater then it - ( greater element - 1 )
+-if the no element found and the element is the greatest than all element
+then it will print the index of last element
+-work good for sorted element
+
+
+
 ---------------------------------------------------------
 map------------------------------------------------------
 
