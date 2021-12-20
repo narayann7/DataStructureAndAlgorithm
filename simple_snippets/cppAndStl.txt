@@ -1,3 +1,24 @@
+random function--------------------------------------
+
+
+
+
+
+
+
+---------------------------------------------------------
+string-----------------------------------------------
+
+string s = "qwerty", s2 = "98766";
+s.erase(1, 2);                                       //delete the chars from index1 to postion 2
+s.insert(2, "oooo");                                 //insert from secont index
+int x = stoi(s2);                                    //string to integer
+s2 = to_string(x) + "988";                           //integer to string
+sort(s.begin(), s.end()); 
+reverse(a.begin(),a.end());
+
+
+---------------------------------------------------------
 vector-----------------------------------------------
 
 vector<int> v;
@@ -48,18 +69,102 @@ then it will print the index of last element
 
 
 ---------------------------------------------------------
+list------------------------------------------------------
+
+
+
+front() – Returns the value of the first element in the list.
+back() – Returns the value of the last element in the list .
+push_front(g) – Adds a new element ‘g’ at the beginning of the list .
+push_back(g) – Adds a new element ‘g’ at the end of the list.
+pop_front() – Removes the first element of the list, and reduces size of the list by 1.
+pop_back() – Removes the last element of the list, and reduces size of the list by 1.
+list::begin() and list::end() in C++ STL– begin() function returns an iterator pointing to the first element of the list
+empty() – Returns whether the list is empty(1) or not(0).
+insert() – Inserts new elements in the list before the element at a specified position.
+erase() – Removes a single element or a range of elements from the list.
+assign() – Assigns new elements to list by replacing current elements and resizes the list.
+remove() – Removes all the elements from the list, which are equal to given element.
+reverse() – Reverses the list.
+size() – Returns the number of elements in the list.
+list resize()function in C++ STL– Used to resize a list container.
+sort() – Sorts the list in increasing order.
+
+
+list max_size() function in C++ STL– Returns the maximum number of elements a list container can hold.
+list unique() in C++ STL– Removes all duplicate consecutive elements from the list.
+list::emplace_front() and list::emplace_back() in C++ STL– emplace_front() function is used to insert a new element into the list container, the new element is added to the beginning of the list. emplace_back() function is used to insert a new element into the list container, the new element is added to the end of the list.
+list::clear() in C++ STL– clear() function is used to remove all the elements of the list container, thus making it size 0.
+list::operator= in C++ STL– This operator is used to assign new contents to the container by replacing the existing contents.
+list::swap() in C++ STL– This function is used to swap the contents of one list with another list of same type and size.
+list splice() function in C++ STL– Used to transfer elements from one list to another.
+list merge() function in C++ STL– Merges two sorted lists into one
+
+
+
+---------------------------------------------------------
+array------------------------------------------------------
+
+
+Accessing Array
+a) at() function
+b) front() function
+c) back() function
+d) data() function
+e) operator []
+
+Modifying Array
+a) swap() function
+b) beign() and end() function
+c) cbeign() and cend() function
+d) crbeign() and crend() function
+e) rbeign() and rend() function
+
+Miscellaneous
+a) size() function
+b) max_size() function
+c) fill() function
+d) empty() function
+
+
+
+
+---------------------------------------------------------
 map------------------------------------------------------
 
 
 
+/*
+Methods of unordered_map : 
+
+    at(): This function in C++ unordered_map returns the reference to the value with the element as key k.
+    begin(): Returns an iterator pointing to the first element in the container in the unordered_map container
+    end(): Returns an iterator pointing to the position past the last element in the container in the unordered_map container
+    bucket(): Returns the bucket number where the element with the key k is located in the map.
+    bucket_count: bucket_count is used to count the total no. of buckets in the unordered_map. No parameter is required to pass into this function.
+    bucket_size: Returns the number of elements in each bucket of the unordered_map.
+    count(): Count the number of elements present in an unordered_map with a given key.
+    equal_range: Return the bounds of a range that includes all the elements in the container with a key that compares equal to k.
+
+*/
 
 
+---------------------------------------------------------
+Iterators------------------------------------------------------
 
 
+Iterators
 
+    begin() – Returns an iterator pointing to the first element in the vector
+    end() – Returns an iterator pointing to the theoretical element that follows the last element in the vector
+    rbegin() – Returns a reverse iterator pointing to the last element in the vector (reverse beginning). It moves from last to first element
+    rend() – Returns a reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end)
+    cbegin() – Returns a constant iterator pointing to the first element in the vector.
+    cend() – Returns a constant iterator pointing to the theoretical element that follows the last element in the vector.
+    crbegin() – Returns a constant reverse iterator pointing to the last element in the vector (reverse beginning). It moves from last to first element
+    crend() – Returns a constant reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end)
 
-
-
+*/
 
 
 
