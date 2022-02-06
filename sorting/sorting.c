@@ -126,6 +126,7 @@ void merge(int *e,int p,int r)//divide and conqure , O(nLog(n))
     int q;
     if(p<r)
     {
+        printf("1");
     q=((p+r)/2);
 merge(e,p,q);
 merge(e,q+1,r);
