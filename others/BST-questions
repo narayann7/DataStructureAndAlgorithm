@@ -1,0 +1,69 @@
+Question: 
+Given two binary trees original and cloned and given a reference to a node target in the original tree.
+The cloned tree is a copy of the original tree.
+Return a reference to the same node in the cloned tree.
+Note that you are not allowed to change any of the two trees or the target node and the answer must be a reference to a node in the cloned tree.
+
+
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+
+// Solution in java
+
+class Solution {
+    public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
+        if(cloned.val==target.val) return cloned;
+        
+        TreeNode temp = new TreeNode();
+        if(cloned.left!=null){
+            temp=getTargetCopy(original, cloned.left, target);
+            if(temp.val==target.val) return temp;
+        }
+        if(cloned.right!=null){
+            temp=getTargetCopy(original, cloned.right, target);
+            if(temp.val==target.val) return temp;
+        }
+        return new TreeNode();
+    }
+}
+
+
+
+Question:
+Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high].
+
+
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    int sum;
+    public int rangeSumBST(TreeNode root, int low, int high) {
+        if(root==null) return 0;
+        if(root.val>=low && root.val<=high)
+            return root.val + rangeSumBST(root.left, low, high) + rangeSumBST(root.right, low, high);
+        else
+            return rangeSumBST(root.left, low, high) + rangeSumBST(root.right, low, high);
+    }
+}
