@@ -1,0 +1,75 @@
+Question:
+Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
+
+Example 1:
+
+Input: nums1 = [1,2,2,1], nums2 = [2,2]
+Output: [2]
+Example 2:
+
+Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+Output: [9,4]
+Explanation: [4,9] is also accepted.
+ 
+
+Constraints:
+
+1 <= nums1.length, nums2.length <= 1000
+0 <= nums1[i], nums2[i] <= 1000
+
+
+//Solution in java
+
+class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        
+        
+        for(int i=0; i<nums1.length-1; i++){
+            if(nums1[i]==nums1[i+1]) nums1[i]=-1;
+        }
+        int count=0;
+        for(int i=0; i<nums1.length; i++){
+            if(nums1[i]!=-1) count++;
+        }
+        int[] uniqueNums1 = new int[count];
+        int j=0;
+        for(int i=0; i<nums1.length; i++){
+            if(nums1[i]!=-1) uniqueNums1[j++]=nums1[i];
+        }
+        
+        for(int i=0; i<nums2.length-1; i++){
+            if(nums2[i]==nums2[i+1]) nums2[i]=-1;
+        }
+        count=0;
+        for(int i=0; i<nums2.length; i++){
+            if(nums2[i]!=-1) count++;
+        }
+        int[] uniqueNums2 = new int[count];
+        j=0;
+        for(int i=0; i<nums2.length; i++){
+            if(nums2[i]!=-1) uniqueNums2[j++]=nums2[i];
+        }
+        
+        ArrayList<Integer>list=new ArrayList<Integer>();
+        for(int ele: uniqueNums1){
+            int l=0, r=uniqueNums2.length-1;
+            while(l<=r){
+                int mid = (l+r)/2;
+                if(ele==uniqueNums2[mid]){
+                    list.add(ele);
+                    break;
+                }
+                else if(ele<uniqueNums2[mid]) r=mid-1;
+                else l=mid+1;
+            }
+        }
+        
+        int[] intersection = new int[list.size()];
+        j=0;
+        for(Integer ele: list) intersection[j++]=ele;
+        
+        return intersection;
+    }
+}
