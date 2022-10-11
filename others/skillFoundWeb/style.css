@@ -1,0 +1,271 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#fademe {
+    opacity: 0;
+    transition: 2s;
+}
+body {
+    background: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.151), rgba(219, 95, 86, 0.3)), url(img/yogaclass.jpg);
+    background-position: center;
+    background-size: 95% 100%;
+    background-repeat: no-repeat;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0% 0%);
+    position: relative;
+}
+.banner-section {
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.banner-buttons a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+.banner-buttons a:hover {
+    color: #50d1c0;
+    background: #fff;
+
+}
+.header-extradiv {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+.rws {
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+.rws img {
+    width: 100px;
+    height: auto;
+}
+.rws:hover {
+    box-shadow: 0 0 20px 0 rgba(185, 78, 36, 0.555);
+    //box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
+    transition: 0.6s;
+    //background-color: rgba(183, 101, 216, 0.3);
+}
+p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+.weighted {
+    font-weight: bold;
+}
+.aboutus-div {
+    background: rgba(222, 192, 222, 0.5);
+}
+.trustees-list .accordion-button {
+    color: black;
+    background: rgba(222, 192, 222, 0.5);
+}
+.trustees-list .list-group-item {
+    background: rgba(222, 192, 222, 0.3);
+}
+.volunteers-list .accordion-button {
+    color: black;
+    background-color: rgba(87, 230, 230, 0.562);
+}
+.volunteers-list .list-group-item {
+    background: rgba(87, 230, 230, 0.2);
+}
+.accordion {
+    box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+}
+.students-div {
+    background: rgb(222, 192, 222);
+}
+.img-fluid {
+    min-width: 100%;
+}
+.stud-act:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 50px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+/*
+.stud-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stud-container .cardd {
+    position: relative;
+    min-width: 300px;
+    height: 180px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                      5px 5px 15px rgba(0,0,0,0.3),
+                      -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+}
+.stud-container .cardd .boxx {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    background: rgba(222, 192, 222, 0.5);
+    border: 2px;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.stud-container .cardd .boxx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    background: rgba(245, 220, 245, 0.377);
+}
+.stud-container .cardd .boxx:hover {
+    transform: translateY(-30px);
+    box-shadow: 0 40px 70px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.stud-container .cardd .boxx .content {
+    padding: 20px;
+    text-align: center;
+}
+.stud-container .cardd .boxx .content h3 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 3em;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.466);
+    transition: 0.5s;
+}
+.stud-container .cardd .boxx .content p {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.829);
+    z-index: 1;
+    transition: 0.5s;
+}
+.stud-container .cardd .boxx .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(255, 248, 248);
+    margin-top: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}*/
+
+.volunteers-sec {
+    background-color: rgba(125, 250, 250, 0.562);
+}
+.box {
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.3);
+}
+
+
+.connect-pg {
+    background: #1E1F34;
+    color: #E1E2E7;
+}
+.add-head {
+    background: rgba(252, 229, 252, 0.5);
+}
+.footer {
+    margin: 0;
+    background: #1E1F34;
+    color: #E1E2E7;
+}
+.footer p {
+    color: #6f7199;
+    font-size: 1rem;
+    //font-weight: 100;
+}
+.bi-suit-heart-fill {
+    color: red;
+    size: 0.5em;
+}
+#mainNavbar .navbar-brand {
+    color: #ea1c2c;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+#mainNavbar .nav-item a {
+    -webkit-transition: all 0.5s ease;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    font-weight: 400;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
+}
+
+.navbar.scrolled {
+    background: rgb(222, 192, 222);
+    transition: background 1s;
+}
+@media (max-width: 768px) {
+    nav.navbar {
+        background: rgb(222, 192, 222);
+        transition: background 1s;
+    }
+    .banner {
+        max-height: 85vh;
+    }
+}
+.carousel-caption h5, .carousel-caption p {
+    font-weight: bold;
+    color: whitesmoke!important;
+    -webkit-text-stroke: 1px black;
+}
