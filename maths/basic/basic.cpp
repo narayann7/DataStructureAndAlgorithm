@@ -100,6 +100,37 @@ int count(int n)
     return floor(log10(n) + 1);
 }
 
+
+/**
+ * Function to calculate factors of a given number.
+ * @param n number whose factors we need to calculate.
+ * @return all factors of number.
+ */
+
+vector<int64_t> factors(int64_t n) {
+    vector<int64_t> ans;
+    if (n < 1) {
+        return ans;
+    }
+    ans.push_back(1);
+    int64_t d = 0;
+    if (n == 1) return ans;
+    for (int i = 2; i <= static_cast<int64_t>(sqrt(n));i++) {
+        if (n % i == 0) {
+            ans.push_back(i);
+            d = n / i;
+            if (d != i) {
+                ans.push_back(d);
+            }
+        }
+    }
+
+    ans.push_back(n);
+    sort(ans.begin(), ans.end());
+    return ans;
+}
+
+
 int main()
 {
     // cout << "hello" << endl;
