@@ -6,23 +6,23 @@ int minswap(vector<int> &x)
     map<int, int> mp;
     for (int i = 0; i < x.size(); i++)
     {
-        mp[x[i]] = i;
-    }
-    int i = 0, c = 0;
-    for (auto s : mp)
+       mp[x[i]] = i;
+   }
+   int i = 0, c = 0;
+   for (auto s : mp)
+   {
+    if (s.first != x[i])
     {
-        if (s.first != x[i])
-        {
-            int k = s.second, k1;
-            k1 = mp[x[i]];
-            mp[x[i]] = mp[x[k]];
-            mp[x[k]] = k1;
-            swap(x[i], x[k]);
-            c++;
-        }
-        i++;
+        int k = s.second, k1;
+        k1 = mp[x[i]];
+        mp[x[i]] = mp[x[k]];
+        mp[x[k]] = k1;
+        swap(x[i], x[k]);
+        c++;
     }
-    return c;
+    i++;
+}
+return c;
 }
 int solve(vector<int> &x)
 {

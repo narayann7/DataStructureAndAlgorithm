@@ -1,5 +1,5 @@
 //gfg 
- 
+
 #include <iostream>
 #include <vector>
 
@@ -14,7 +14,6 @@ int main()
         int n;
         cin >> n;
         int a = 0, b = 0, c = 0;
-
         int arr[n];
         int i;
         for (i = 0; i < n; i++)

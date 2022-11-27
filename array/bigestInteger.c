@@ -26,13 +26,13 @@ void faac(int n)
 
 int main()
 { int i;
-	arr[0]=1;
-	int n;
-	scanf("%d",&n);
-	for(i=2;i<=n;i++)
-		faac(i);
-	for(i=len-1;i>=0;i--)
-		printf("%d",arr[i]);
+arr[0]=1;
+int n;
+scanf("%d",&n);
+for(i=2;i<=n;i++)
+	faac(i);
+for(i=len-1;i>=0;i--)
+	printf("%d",arr[i]);
 }
 
 
