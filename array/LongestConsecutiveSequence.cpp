@@ -1,6 +1,7 @@
 //leetcode 128 number.
 //its only the logic part 
-
+#include<bits/stdc++.h>
+using namespace std;
 int longestConsecutive(vector<int> &nums)
 {
   if(nums.size()==0)
