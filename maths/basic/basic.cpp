@@ -100,6 +100,14 @@ int count(int n)
     return floor(log10(n) + 1);
 }
 
+//creator: MarufHasan24
+double factorial(int n){
+    if(n==0){
+        return 1;
+    }
+    return n*factorial(n-1);
+}// factorial of any number using recursive function
+
 int main()
 {
     // cout << "hello" << endl;
@@ -107,7 +115,6 @@ int main()
     // cout << count(6578) << endl;
     // cout << powerOfNo(3, 5) << endl;
     // sqrootWithOutSqFunction(6.2);
-
-
+    // factorial(124)
     return 0;
 }
